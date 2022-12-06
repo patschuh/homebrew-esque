@@ -8,4 +8,10 @@ cask "kafkaesque" do
   homepage "https://github.com/patschuh/KafkaEsque"
 
   app "KafkaEsque.app"
+
+  postflight do
+    system_command "xattr",
+                   args: ["-rd", "com.apple.quarantine", "#{appdir}/KafkaEsque.app"],
+                   sudo: false
+  end
 end
