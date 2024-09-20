@@ -1,6 +1,6 @@
 cask "kafkaesque" do
-  version "2.9.4"
-  sha256 "a3ceb39233cb99f22bac3acc7e43f7e13947773bd8693b58fb92e7efdebede78"
+  version "2.9.5"
+  sha256 "bdffe0dd697a7c13aeaea7cc7df4dc0e4e38842d04da48cadefb5462c95bba5b"
 
   url "https://github.com/patschuh/KafkaEsque/releases/download/v#{version}/kafkaesque-#{version}.dmg"
   name "KafkaEsque"
