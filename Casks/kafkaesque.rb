@@ -7,6 +7,8 @@ cask "kafkaesque" do
   desc "GUI for Apache Kafka"
   homepage "https://github.com/patschuh/KafkaEsque"
 
+  depends_on :macos
+  
   app "KafkaEsque.app"
 
   postflight do
