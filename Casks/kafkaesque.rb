@@ -8,7 +8,7 @@ cask "kafkaesque" do
   homepage "https://github.com/patschuh/KafkaEsque"
 
   depends_on :macos
-  
+
   app "KafkaEsque.app"
 
   postflight do
