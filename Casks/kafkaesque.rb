@@ -11,9 +11,7 @@ cask "kafkaesque" do
 
   app "KafkaEsque.app"
 
-  postflight do
-    system_command "xattr",
-                   args: ["-rd", "com.apple.quarantine", "#{appdir}/KafkaEsque.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-rd", "com.apple.quarantine", "{{appdir}}/KafkaEsque.app"]
   end
 end
